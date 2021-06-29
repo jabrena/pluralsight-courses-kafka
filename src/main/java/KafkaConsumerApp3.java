@@ -1,23 +1,23 @@
-import java.time.Duration;
-import java.util.ArrayList;
-import java.util.Properties;
-
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class KafkaConsumerApp {
+import java.time.Duration;
+import java.util.ArrayList;
+import java.util.Properties;
 
-    public static final Logger logger = LoggerFactory.getLogger(KafkaConsumerApp.class);
+public class KafkaConsumerApp3 {
+
+    public static final Logger logger = LoggerFactory.getLogger(KafkaConsumerApp3.class);
 
     public static void main(String[] args) {
 
         Properties props = new Properties();
 
         props.setProperty("bootstrap.servers", "localhost:9092");
-        props.setProperty("group.id", "test");
+        props.setProperty("group.id", "test2");
         props.setProperty("enable.auto.commit", "true");
         props.setProperty("auto.commit.interval.ms", "1000");
         props.setProperty("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
