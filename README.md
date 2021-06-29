@@ -4,10 +4,10 @@
 
 ```  
 cd infrastructure
-chmod 644 ./script.sh
+chmod 777 ./script.sh
 ./script.sh
 ```
 
 ## Gidpod
 
-- https://gitpod.io/#https://github.com/jabrena/pluralsight-courses-kafka
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/jabrena/pluralsight-courses-kafka)
