@@ -1,6 +1,6 @@
 # Kafka Infrastructure
 
-# Getting started
+## Getting started
 
 ```
 docker-compose up -d
@@ -15,7 +15,11 @@ docker-compose exec broker kafka-topics \
 docker-compose down
 ```
 
-# Minimum commands to admin the cluster
+**Kafdrop:**
+
+- http://localhost:8001/
+
+## Minimum commands to admin the cluster
 
 **List topics:**
 
@@ -63,10 +67,13 @@ docker-compose exec zookeeper kafka-configs \
     --entity-type topics \
     --entity-name my-topic \
     --delete-config retention.ms    
-     
+
+docker-compose logs --f     
 ```
 
 
 # References
 
 - https://docs.confluent.io/platform/current/quickstart/cos-docker-quickstart.html
+- https://github.com/obsidiandynamics/kafdrop
+
