@@ -15,6 +15,10 @@ docker-compose exec broker kafka-topics \
 docker-compose down
 ```
 
+**Confluent Control Center:**
+
+- http://localhost:9021/
+
 **Kafdrop:**
 
 - http://localhost:8001/
